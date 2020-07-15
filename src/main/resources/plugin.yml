@@ -1,0 +1,6 @@
+name: PaperBlockStateSnapshotBug
+version: ${project.version}
+main: dev.bloodstone.bugs.paperblockstatesnapshotbug.PaperBlockStateSnapshotBug
+api-version: 1.16
+authors: [Prof_Bloodstone]
+description: Showcases bug in Paper when getting block state without snapshot.
