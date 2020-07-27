@@ -26,8 +26,8 @@ public final class PaperBlockStateSnapshotBug extends JavaPlugin implements List
         PersistentDataContainer snapshotPDC = checkTileState(event.getBlock(), true);
         PersistentDataContainer livePDC = checkTileState(event.getBlock(), false);
         if (snapshotPDC.equals(livePDC)) {
-            getServer().broadcastMessage("PDCs are not equal!");
-        } else getServer().broadcastMessage("PDCs are equal!");
+            getServer().broadcastMessage("PDCs are equal!");
+        } else getServer().broadcastMessage("PDCs are not equal!");
         for (Pair<String, PersistentDataContainer> p: Arrays.asList(
                 new Pair<>("Snapshot", snapshotPDC),
                 new Pair<>("Live", livePDC)
